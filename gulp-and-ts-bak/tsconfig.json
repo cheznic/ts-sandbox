@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs", /* [ 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext' ] */
+    "sourceMap": false,
+    "removeComments": true,
+    "noEmitOnError": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "baseUrl": ".", /* [was "./"] Base directory to resolve non-absolute module names. */
+    // "outDir": "./src/js"
+  },
+  "include": [
+    "src/ts/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "built"
+  ]
+}

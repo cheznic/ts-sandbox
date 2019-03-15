@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Typescript and 3rd Party Libs</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="main.css" />
+
+   <!-- 
+   Installing 3rd party packages requires the following:
+   
+   Using jQuery as an example:
+   - install jQuery using npm the type definitions from the TS community
+         npm install --save-dev @types/jquery
+     this will update the package.json dev dependencies with 
+         "@types/jquery": "^3.3.29",
+   - alternatively you can find the type definition files which are named *.d.ts
+      - there is a repo for these files at http://definitelytyped.org/
+   - install jquery to the project in the following ways
+         - npm install jquery
+            or
+         - A <script> tag in the index.html file referencing the jQuery CDN
+   -->
+</head>
+
+<body>
+   <button>Click me</button>
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+   <script>
+
+   </script>
+   <script src="app.js"></script>
+
+</body>
+
+</html>

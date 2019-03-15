@@ -1,0 +1,19 @@
+{
+  "name": "ts-and-jquery",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.3.29",
+    "lite-server": "^2.4.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

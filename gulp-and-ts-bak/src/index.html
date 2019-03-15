@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Typescript with Gulp and then some.</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="./css/main.css" />
+   <script src="./js/system.js"></script>
+   <!-- 
+      This following configuration is needed to use gulp with a typescript 
+      project.
+
+      Install gulp-cli if needed, the '-g' means global and is not project 
+      specific.
+         - npm install -g gulp-cli
+
+      Install typescript, gulp, and gulp-typescript dependencies.
+         - npm install --save-dev typescript gulp gulp-typescript
+
+      Also install gulp del.
+         - npm install --save-dev gulp del
+
+      For more information on the typescript, gulp and gulp-typescript go to:
+         - http://www.typescriptlang.org/
+         - https://www.npmjs.com/package/gulp-typescript
+         - https://www.npmjs.com/package/gulp 
+
+      Edit your package.json file to include an additional script. Change 
+      the "scripts": {} object by adding:
+         "build": "gulp"
+      
+      To use the module loader below you'll need to install jQuery and 
+      typescript.
+         - npm install --save-dev jquery
+         - npm install --save-dev typescript
+      
+      Other gulp task support include:
+         - npm install --save-dev gulp-htmlmin
+         - npm install --save-dev gulp-uglifycss
+   -->
+</head>
+
+<body>
+   <button>click me</button>
+   <script>
+      SystemJS.config({
+         map: {
+            "jQuery": "./js/jquery.min.js"
+         },
+         baseURL: '/',
+         packages: {
+            '/': {
+               defaultExtension: 'js'
+            }
+         }
+      });
+      SystemJS.import('./js/app.js');
+   </script>
+</body>
+
+</html>
